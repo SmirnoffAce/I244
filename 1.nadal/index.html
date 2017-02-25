@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="et" xml:lang="et" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title>Kodune ulesanne - 1. nadal (Brokan)</title>
+		<style type="text/css">
+			img {
+				float: right;
+			}
+			body{
+				background: #DCDCDC;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 id="tcp">TCP/IP</h2>
+		<p>
+		<img alt="TCP/IP" src="http://www.whatisnetworks.com/wp-content/uploads/2015/03/IC197700.gif">
+			Internetiprotokollistik ehk TCP/IP on andmevahetusprotokollide komplekt, millega tagatakse interneti ja muude võrkude toimimine. 
+			Nimetus TCP/IP viitab protokollistiku peamistele protokollidele TCP ja IP. Protokollistiku arendas 1970. aastatel välja Ühendriikide kaitseministeeriumi agentuur 
+			DARPA pärast tööd maailma esimese laivõrgu ja interneti eelkäija ARPANETi kallal.<br/>
+			<b>TCP/IP koosneb rakendus-, transpordi-, võrgu- ja lülikihist.</b>
+			<a href="https://et.wikipedia.org/wiki/Internetiprotokollistik">[1]</a>
+		</p>
+
+		<h3 id="udp">UDP</h3>
+		<p>
+			Kasutajadatagrammi protokoll (ingl User Datagram Protocol, UDP) on transpordikihi andmesideprotokoll, mis on defineeritud IPga sõnumite saatmiseks.
+			UDP võimaldab otspunktide (defineeritud IP aadressi järgi) vahele olekuta ühendusi luua ehk UDPl ei ole erinevalt TCPst selgelt eristatavaid olekuid "suletud", "ühendamisel", "ühendatud". Kuna ühenduse olekut ei kontrollita. peab UDP kasutama best-effort põhimõtet ehk koostatud pakett saadetakse välja ja loodetakse, et see jõuab kohale. Kui pakett mõnel põhjusel kohale ei jõua, ei ole saatjal võimalik seda protokolli tasemel tuvastada ja seetõttu ei toimu ka automaatset paketi uuestisaatmist.
+			UDP ei kontrolli paketi kohale jõudmist. Samuti ei nummerda UDP saadetud pakette, mis tähendab, et paketid võivad sihtpunkti jõuda suvalises järjekorras ja neid ei ole võimalik hiljem protokolli tasemel järjestada. Samuti ei ole võimalik tuvastada olukorda, kui mingist paketist jõuab sihtpunkti mitu koopiat. UDP ei tuvasta ka ummikuid ega piira sellest tulenevalt saadetavate andmete mahtu (erinevalt TCPst).
+			UDP ei paku saadetud andmetele konfidentsiaalsust, terviklikkust. UDP protokoll ei krüpteeri andmeid ehk paketi sisu on kõigile kergelt loetav. UDP ei taga, et algpunkti ja sihtpunkti vahel andmeid sihiteadlikult ei muudeta (vahendajarünne). Küll aga teeb UDP veakontrolli (checksum), et tuvastada transpordi käigus tekkinud vigu.
+			UDP ühenduse üles seadmine on lihtne ja võtab vähe ressursse. Ühenduse loomiseks on vaja teada ainult sihtpunkti IP aadressi ja pordi numbrit. UDP andmeside on ebakindel, aga kiire, sest sihtpunkt ei pea saatma kinnitusi, et ta on paketid kätte saanud. UDP lihtsuse tõttu on tema päis väga lihtne ja väikese mahuga (8 baiti). Ühte UDP paketti mahub maksimaalselt natuke alla 64 KiB andmeid (65 507 baiti IPv4ga ja 65 527 baiti IPv6ga).
+			Levinumad UDP kasutusalad on need, kus kõigi pakettide kohale jõudmine ei ole oluline, andmeside madal latents (sihtpunkti jõudmise aeg) on tähtis või transpordikihist kõrgemal olev protokoll implementeerib ise pakettide uuestisaatmise ja järjestamise.
+			<a href="https://et.wikipedia.org/wiki/Kasutajadatagrammi_protokoll">[2]</a>
+		</p>
+		<h5>Levinud kasutusalad:</h5>
+		<ul>
+			<li>VPN tunnelid</li>
+			<li>heli/video striimimine</li>
+			<li>multicast protokollid</li>
+		</ul>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer">
+				<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88">
+			</a>
+		</p>
+	</body>
+</html>
