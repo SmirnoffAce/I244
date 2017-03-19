@@ -23,6 +23,16 @@
 						active.siblings(":first").addClass('active');
 					}
 				}
+				
+				previous = document.getElementById('prev');
+				previous.onclick = function(){
+					var active = $(".active").removeClass('active');
+					if(active.prev() && active.prev().length){
+						active .prev().addClass('active');
+					}else{
+						active.siblings(":last").addClass('active');
+					}
+				}
 			}			
 		</script>
 	</head>
