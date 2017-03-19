@@ -73,6 +73,19 @@
 				width: 100%;
 			}
 		</style>
+		<script>
+			window.onload = function(){
+				a = document.getElementById('kogu');
+				a.onclick = function(){
+					var x = Math.round(Math.random()* 250) + "px";
+					var y = Math.round(Math.random()* 350) + "px";
+					
+					console.log(y + " - " + x);	
+					a.style.top = x;
+					a.style.left = y;
+				}	
+			}
+		</script>
 	</head>
 	<body>
 		<img src="duck.png" id="duck" alt="bg">
